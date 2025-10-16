@@ -1047,7 +1047,7 @@ h6 {
 
 
 /*--------------------------------------------------------------
-# Preloader (Optimized)
+# Preloader (0.8s Optimized)
 --------------------------------------------------------------*/
 #preloader {
   position: fixed;
@@ -1057,7 +1057,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+  transition: opacity 0.4s ease-out, visibility 0.4s ease-out;
   width: 100%;
   height: 100vh;
 }
@@ -1067,7 +1067,7 @@ h6 {
   height: 40px;
   background-color: var(--accent-color);
   margin: 0 4px;
-  animation: animate-preloader 0.8s ease-in-out infinite;
+  animation: animate-preloader 0.6s ease-in-out infinite;
 }
 
 @keyframes animate-preloader {
@@ -1075,7 +1075,7 @@ h6 {
   50% { transform: scaleY(1); }
 }
 
-/* Hidden state (fade out) */
+/* Hidden (fade-out) state */
 #preloader.hide {
   opacity: 0;
   visibility: hidden;
