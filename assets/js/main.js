@@ -6,6 +6,10 @@
 * License: https://bootstrapmade.com/license/
 */
 
+
+// Hero Slides
+
+
 (function() {
   "use strict";
 
