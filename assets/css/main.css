@@ -36,6 +36,14 @@
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
+/* hero mobile screen */
+/* Fix hero overlap on mobile */
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 120px; /* adjust until it clears your navbar */
+  }
+}
+
 /* HEADER NAVBAR */
 /* Keep header above carousel */
 #header {
@@ -114,12 +122,12 @@
 }
 
 /* keep overlay working */
-.hero-background .overlay {
+/*.hero-background .overlay {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.5);
   z-index: 2;
-}*/
+}*/*/
 
 
 /*--------------------------------------------------------------
@@ -1488,8 +1496,14 @@ section,
 
 @media (max-width: 992px) {
   .hero .hero-visual {
-    margin-top: 60px;
+    margin-top: 250px;
   }
+
+  @media (max-width: 768px) {
+  #hero .heroCarousel {
+    padding-top: 180px !important;; /* adjust until it clears your navbar */
+  }
+}
 
   .hero .feature-card {
     padding: 20px;
@@ -1587,7 +1601,7 @@ section,
 /* ===== HERO CAROUSEL FULLSCREEN FIX ===== */
 
 #hero.hero {
-  padding: 0 !important;
+  /*padding: 0 !important;*/
   min-height: 100vh;
 }
 
